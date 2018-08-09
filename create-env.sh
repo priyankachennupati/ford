@@ -9,6 +9,5 @@ do
     sleep 1
     docker run --name www.priya$i -d -it --rm priyankachennupati/real-img bin/bash
     echo "www.priya$i container has been created!"
-	echo "=============================="
+	echo "============================"
 done
-docker inspect -f {{.NetworkSettings.Networks.bridge.IPAddress}}'docker ps -q'>ip.txt

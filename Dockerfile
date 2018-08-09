@@ -2,8 +2,8 @@ FROM tomcat:8.5
 MAINTAINER "PRIYANKA"
 RUN apt-get update
 RUN apt-get install -y procps
-RUN apt-get install vim
-RUN apt-get install sudo
+RUN apt-get install -y vim
+RUN apt-get install -y sudo
 RUN useradd -m -d /home/priya -s /bin/bash/priya
 RUN echo "priya:priya1@"| chpasswd
 RUN apt-get install net-tools
